@@ -54,7 +54,7 @@
 /* Mobile L rules */
 @media screen and (max-width: 425px) {
 	#about {
-		height: 700px;
+		height: 780px;
 	}
 	
 	.about-content {
@@ -81,6 +81,7 @@
 	
 	.project-text-container {
 		width: 350px;
+		margin-right: 1em;
 	}
 	
 	#contact {
@@ -91,7 +92,7 @@
 /* Mobile M rules */
 @media screen and (max-width: 375px) {
 	#about {
-		height: 730px;
+		height: 800px;
 	}
 	
 	.project-image img {
@@ -110,7 +111,7 @@
 /* Mobile S rules */
 @media screen and (max-width: 320px) {
 	#about {
-		height: 790px;
+		height: 860px;
 	}
 	
 	.about-content img {
