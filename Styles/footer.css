@@ -1,0 +1,39 @@
+
+.footer {
+    margin-top: 20px;
+    background-color: #3D54FF;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1em;
+    height: fit-content;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .link {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E9E9E9;
+}
+
+.footer .link a {
+    text-decoration: none;
+    color: #E9E9E9;
+}
+
+.footer .link a:hover {
+    text-decoration: underline;
+}
+
+.footer-content img {
+    width: 20px;
+    height: 20px;
+    margin-right: 1em;
+}

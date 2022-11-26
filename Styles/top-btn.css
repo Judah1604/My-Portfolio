@@ -1,0 +1,20 @@
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px;
+}
+
+.back-to-top button{
+    border: none;
+    background-color: #f9f9f9;
+    border-radius: 100%;
+    box-shadow: 2px 3px 5px rgb(0 0 0 / 20%);
+    padding: 0.6em;
+}
+
+.back-to-top img {
+    width: 40px;
+    height: 40px;
+}

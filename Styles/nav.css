@@ -1,0 +1,26 @@
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+	height: 50px;
+    background-color: #B9B9B9;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.nav-item a:hover {
+    color: #3D75FF;
+}
