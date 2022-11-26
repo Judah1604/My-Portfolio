@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="Styles/common.css">
+    <link rel="stylesheet" href="Styles/nav.css">
+    <link rel="stylesheet" href="Styles/hero-section.css">
+    <link rel="stylesheet" href="Styles/about.css">
+    <link rel="stylesheet" href="Styles/projects.css">
+    <link rel="stylesheet" href="Styles/contact.css">
+    <link rel="stylesheet" href="Styles/top-btn.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+    <link rel="stylesheet" href="Styles/media-queries.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="nav-items">
+            <div class="nav-item"><a href="#about">About</a></div>
+            <div class="nav-item"><a href="#projects">My Projects</a></div>
+            <div class="nav-item"><a href="#contact">Contact</a></div>
+        </div>
+    </div>
+
+    <div class="hero-section">
+        <div class="hero-image">
+            <img src="Images/hero-sec.jpg">
+        </div>
+        <div class="hero-content">
+            <h1>
+                <span class="highlight">Judah Oyedele</span>
+                <span class="title">Frontend Developer</span>
+            </h1>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="heading">
+            <h1>About Me</h1>
+        </div>
+
+        <div class="about-content">
+            <img src="Images/profile2.png">
+            <div class="about-text">
+                Recent high school graduate with a background in web design and development of dynamic, responsive and interactive websites utilizing HTML, CSS, Javascript and their frameworks. Over 1 year of experience working on personal projects and blogs. Implemented new responsive web design approach that increased traffic by 25% per month in just 6 months. Seeking to become the next most-talked about young web developer by deploying my experience and skills in projects that I handle. I am currently working on my W3C web developer certification.
+            </div>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="heading">
+            <h1>Projects</h1>
+        </div>
+        <div class="project">
+            <div class="project-text-container">
+                <h1>Google Clone</h1>
+                <div class="project-text">
+                    I made this clone of Google and added a Dark mode switch
+                    <br> HTML, CSS and Javascript
+                </div>
+                <div class="buttons">
+                    <div class="visit-btn"><a href="#"><button>Go To Site</button></a></div>
+                    <div class="gts-btn"><a href="#"><button>View Code</button></a></div>
+                </div>
+            </div>
+            <div class="project-image">
+                <img src="Images/projects/google_clone.png" alt="Google Clone">
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-text-container">
+                <h1>Weather App</h1>
+                <div class="project-text">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                    nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                </div>
+                <div class="buttons">
+                    <div class="visit-btn"><a href="#"><button>Go To Site</button></a></div>
+                    <div class="gts-btn"><a href="#"><button>View Code</button></a></div>
+                </div>
+            </div>
+            <div class="project-image">
+                <img src="Images/projects/weather-app.png" alt="Weather App" class="cover">
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="contact-content">
+            <h1>Contact</h1>
+            <span>Let's get in touch</span>
+
+            <form  method="post" action="contact.php" class="form">
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name" name="fullName" required>
+                    <label>Full Name</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" placeholder="Email" name="Email" required>
+                    <label>Email</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="number" placeholder="Phone Number" name="phoneNumber">
+                    <label>Phone Number</label>
+                </div>
+
+                <div class="form-group">
+                    <textarea placeholder="Message" name="message"></textarea>
+                    <label>Message</label>
+                </div>
+
+                <div class="form-group">
+                    <button class="submit-btn">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <a href="#navbar" class="back-to-top"><button><img src="Icons/top.png"></button></a>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="link">
+                <img src="Icons/fb2.png">
+                <a href="">Judah Oyedele</a>
+            </div>
+            <div class="link">
+                <img src="Icons/gmail.png">
+                <a href="mailto:oyedeleinioluwajudah@gmail.com" target="_blank">oyedeleinioluwajudah@gmail.com</a>
+            </div>
+            <div class="link">
+                <img src="Icons/twitter.png">
+                <a href="">Judah Oyedele</a>
+            </div>
+            <div class="link">
+                <img src="Icons/whatsapp.png">
+                +234 8166085206
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
