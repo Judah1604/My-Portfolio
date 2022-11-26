@@ -29,6 +29,7 @@
     border-radius: 50%;
     box-shadow: 2px 2px 2px rgb(0 0 0 / 30%);
     background-color: #0f4ce3;
+object-fit: scale-down;
 }
 
 .about-text {
