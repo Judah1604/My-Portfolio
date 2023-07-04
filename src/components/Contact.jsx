@@ -11,7 +11,7 @@ const Contact = () => {
             <div className="contact" id="contact">
                 <h1 className="header">Contact</h1>
                 <p>Feel free to contact me.</p>
-                <form action="/success.html" method="POST" name="Contact Form">
+                <form action="/success.html" method="POST" name="Contact Form" netlify>
                     <input type="hidden" name="form-name" value="Contact Form" />
                     <motion.div className="form-group" initial={{ translateX: -200 }} whileInView={{ translateX: 0 }}>
                         <input type="text" id="fullname" name="Full Name" value={fullname} onChange={(e) => setFullname(e.target.value)} required />
