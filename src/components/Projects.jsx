@@ -18,6 +18,7 @@ const Projects = () => {
                         all you need to do is to write the username in the input box. Built this with:'
                     tools={['HTML', 'CSS', 'React']}
                     filename='ghusers.webp'
+                    url='https://judah1604.github.io/Github-user-search/'
                 />
                 <Project
                     heading='Insure Landing Page'

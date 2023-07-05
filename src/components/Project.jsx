@@ -11,7 +11,7 @@ const Project = ({ heading, details, tools, filename, isPortfolio, url }) => {
                     {tools.map((tool, index) => (<li key={index}>{tool}</li>))}
                 </ul>
                 <a href={"https://github.com/Judah1604/" + heading.split(' ').join('-')} className="btn code-btn" target="_blank">View Code</a>
-                {isPortfolio ? '' : <a href={"https://judah1604.github.io/" + heading.split(' ').join('-')} className="btn red-btn" target="_blank">Visit Site</a>}
+                {isPortfolio ? '' : <a href={url ? url : "https://judah1604.github.io/" + heading.split(' ').join('-')} className="btn red-btn" target="_blank">Visit Site</a>}
             </motion.div>
             <motion.div className="project-img col-md-5" initial={{ translateX: 200 }} whileInView={{ translateX: 0 }} transition={{ type: 'spring', bounce: 0.4 }}>
                 <img src={"Images/Projects/" + filename} alt={heading} />
