@@ -9,7 +9,7 @@ const Projects = () => {
                     heading='My Portfolio'
                     details='This is my portfolio site done with React. Built this with:'
                     tools={['HTML', 'SASS', 'Bootstrap', 'React', 'Framer Motion']}
-                    filename='screenshot.PNG'
+                    filename='portfolio.PNG'
                     isPortfolio
                 />
                 <Project

@@ -16,7 +16,7 @@ const Skills = () => {
             <motion.div className="languages" initial={{ translateY: 70 }}
                 whileInView={{ translateY: 0 }}>
                 {iconNames.map((iconName) => (
-                    <i className={"fa-brands fa-" + iconName}></i>
+                    <i className={"fa-brands fa-" + iconName} key={iconName}></i>
                 ))}
             </motion.div>
         </div>
