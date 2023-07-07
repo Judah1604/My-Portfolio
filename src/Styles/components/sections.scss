@@ -57,6 +57,7 @@ $gradient: linear-gradient(45deg, #ff294e, #ff4b2b);
 }
 
 .skills {
+	overflow: hidden;
 	
 	.languages {
 		@include flex (center, center, row, 10%);

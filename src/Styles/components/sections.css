@@ -46,6 +46,9 @@
   box-shadow: inset 190px 0px 0px #FF4747;
 }
 
+.skills {
+  overflow: hidden;
+}
 .skills .languages {
   display: flex;
   justify-content: center;
