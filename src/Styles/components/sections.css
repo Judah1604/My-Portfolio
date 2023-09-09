@@ -41,21 +41,20 @@
 .about .about-text .btn {
   margin-top: 20px;
   margin-left: 10px;
+  width: 250px;
 }
 .about .about-text .btn:hover {
-  box-shadow: inset 190px 0px 0px #FF4747;
+  box-shadow: inset 250px 0px 0px #FF4747;
 }
 
 .skills {
   overflow: hidden;
 }
 .skills .languages {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 10%;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 40px;
+  place-items: center;
   padding: 10px;
   margin-bottom: 2em;
   overflow: hidden;
@@ -99,6 +98,9 @@
 .projects .projects-container .project .project-img img {
   width: 100%;
   border-radius: 4px;
+}
+.projects i {
+  font-size: 1.1em;
 }
 
 .contact {
@@ -203,7 +205,7 @@
   box-shadow: inset 0px 0px 0px #FF4747;
 }
 .red-btn:hover {
-  box-shadow: inset 110px 0px 0px #FF4747;
+  box-shadow: inset 150px 0px 0px #FF4747;
   border-color: #FF4747;
 }
 
@@ -213,10 +215,16 @@
   background-color: inherit;
   letter-spacing: 1px;
   transition: 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn:hover {
   color: white;
   background-color: inherit;
+}
+.btn i {
+  margin-right: 10px;
 }
 
 .code-btn {
@@ -226,7 +234,7 @@
   margin-right: 20px;
 }
 .code-btn:hover {
-  box-shadow: inset 125px 0px 0px white;
+  box-shadow: inset 160px 0px 0px white;
   border-color: white;
   color: #0c0c0c;
 }/*# sourceMappingURL=sections.css.map */

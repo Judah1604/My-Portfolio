@@ -48,9 +48,10 @@ $gradient: linear-gradient(45deg, #ff294e, #ff4b2b);
 		.btn {
 			margin-top: 20px;
 			margin-left: 10px;
+			width: 250px;
 
 			&:hover {
-				box-shadow: inset 190px 0px 0px #FF4747;
+				box-shadow: inset 250px 0px 0px #FF4747;
 			}
 		}
 	}
@@ -60,8 +61,10 @@ $gradient: linear-gradient(45deg, #ff294e, #ff4b2b);
 	overflow: hidden;
 	
 	.languages {
-		@include flex (center, center, row, 10%);
-		flex-wrap: wrap;
+		display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-gap: 40px;
+		place-items: center;
 		padding: 10px;
 		margin-bottom: 2em;
 		overflow: hidden;
@@ -115,6 +118,10 @@ $gradient: linear-gradient(45deg, #ff294e, #ff4b2b);
 				}
 			}
 		}
+	}
+
+	i {
+		font-size: 1.1em;
 	}
 }
 
@@ -220,7 +227,7 @@ $gradient: linear-gradient(45deg, #ff294e, #ff4b2b);
 	box-shadow: inset 0px 0px 0px $red-color;
 
 	&:hover {
-		box-shadow: inset 110px 0px 0px $red-color;
+		box-shadow: inset 150px 0px 0px $red-color;
 		border-color: $red-color;
 	}
 }
@@ -231,10 +238,17 @@ $gradient: linear-gradient(45deg, #ff294e, #ff4b2b);
 	background-color: inherit;
 	letter-spacing: 1px;
 	transition: 0.4s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	&:hover {
 		color: white;
 		background-color: inherit;
+	}
+
+	i {
+		margin-right: 10px;
 	}
 }
 
@@ -245,7 +259,7 @@ $gradient: linear-gradient(45deg, #ff294e, #ff4b2b);
 	margin-right: 20px;
 
 	&:hover {
-		box-shadow: inset 125px 0px 0px white;
+		box-shadow: inset 160px 0px 0px white;
 		border-color: white;
 		color: #0c0c0c;
 	}
