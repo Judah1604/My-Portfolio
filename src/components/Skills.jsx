@@ -1,4 +1,4 @@
-import { motion, stagger } from "framer-motion"
+import { motion } from "framer-motion"
 
 const Skills = () => {
     let iconNames = [
@@ -13,7 +13,7 @@ const Skills = () => {
     return (
         <div className="skills">
             <h1 className="header">Skills</h1>
-            <motion.div className="languages" initial={{ translateY: 70 }}
+            <motion.div className="languages" initial={{ translateY: 70 }} viewport={{once: true}}
                 whileInView={{ translateY: 0 }}>
                 {iconNames.map((iconName) => (
                     <i className={"fa-brands fa-" + iconName} key={iconName}></i>

@@ -7,6 +7,7 @@ const Project = ({ heading, details, tools, filename, isPortfolio, url }) => {
         className="project-text col-md-5"
         initial={{ translateX: -200 }}
         whileInView={{ translateX: 0 }}
+        viewport={{once: true}}
       >
         <h2>{heading}</h2>
         <p>{details}</p>
@@ -49,6 +50,7 @@ const Project = ({ heading, details, tools, filename, isPortfolio, url }) => {
         className="project-img col-md-5"
         initial={{ translateX: 200 }}
         whileInView={{ translateX: 0 }}
+        viewport={{once: true}}
         transition={{ type: "spring", bounce: 0.4 }}
       >
         <img src={"Images/Projects/" + filename} alt={heading} />
