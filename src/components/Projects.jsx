@@ -6,12 +6,12 @@ const Projects = () => {
             <h1 className="header">Projects</h1>
             <div className="projects-container">
                  <Project
-                    heading='Expense Tracker'
+                    heading='Expense Tracker Web App'
                     details='This is a Expense Tracker with CRUD(Create, Read, Update, Delete) capabilities, 
                         All you have to do is to write the expense in the expense input and the price and the app creates a new item and calculates the total.
                         You can also edit the items or delete them. Built this with:'
                     tools={['HTML', 'SASS', 'React']}
-                    filename='expense.PNG'
+                    filename='expense.webp'
                 />
                 <Project
                     heading='My Portfolio'
