@@ -51,11 +51,13 @@
   overflow: hidden;
 }
 .skills .languages {
+  width: 60%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-gap: 20px;
   place-items: center;
   padding: 10px;
+  margin: auto;
   margin-bottom: 2em;
   overflow: hidden;
 }

@@ -5,6 +5,9 @@
   .top-section .hero-section h1 {
     font-size: 4em;
   }
+  .skills .languages {
+    width: 100%;
+  }
   .about .about-content {
     flex-direction: column;
     margin: 0;
