@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Space+Grotesk:wght@500&display=swap');
 
 $body-font-family: 'Tilt Neon',
-cursive;
+    cursive;
 $hero-font-family: 'Space Grotesk',
-sans-serif;
+    sans-serif;
 
 // Palette
 
@@ -14,9 +14,9 @@ $red-color: #FF4747;
 // Mixins
 
 @mixin flex ($justify, $align, $direction, $gap) {
-	display: flex;
-	justify-content: $justify;
-	align-items: $align;
-	flex-direction: $direction;
-	gap: $gap;
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    gap: $gap;
 }
