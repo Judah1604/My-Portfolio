@@ -1,5 +1,5 @@
 # My-Portfolio
-This is my Front Web developer portfolio built with HTML, SASS, JavaScript, Bootstrap.
+This is my Front Web developer portfolio built with HTML, SASS, React, Bootstrap.
 
 ## Screenshot
 
