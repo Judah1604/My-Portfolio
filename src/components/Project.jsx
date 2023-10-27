@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const Project = ({ heading, details, tools, filename, isPortfolio, url }) => {
+const Project = ({ heading, details, tools, filename, isPortfolio, repoName, url }) => {
   return (
     <div className="project row">
       <motion.div
@@ -19,7 +19,7 @@ const Project = ({ heading, details, tools, filename, isPortfolio, url }) => {
         <div className="d-flex">
           <a
             href={
-              "https://github.com/Judah1604/" + heading.split(" ").join("-")
+              "https://github.com/Judah1604/" + repoName
             }
             className="btn code-btn"
             target="_blank"

@@ -10,6 +10,7 @@ const Projects = () => {
                     details="This is a word count app that counts the number of words and characters in it. Built this with:"
                     tools={["HTML", "SASS", "React"]}
                     filename="word-count.webp"
+                    repoName={"Word Count"}
                 />
                 <Project
                     heading="Expense Tracker Web App"
@@ -18,6 +19,7 @@ const Projects = () => {
                         You can also edit the items or delete them. Built this with:"
                     tools={["HTML", "SASS", "React"]}
                     filename="expense.webp"
+                    repoName={"Expense Tracker Web App"}
                 />
                 <Project
                     heading="My Portfolio"
@@ -31,6 +33,7 @@ const Projects = () => {
                     ]}
                     filename="portfolio.PNG"
                     isPortfolio
+                    repoName={"My Portfolio"}
                 />
                 <Project
                     heading="Github Users Search"
@@ -39,24 +42,28 @@ const Projects = () => {
                     tools={["HTML", "CSS", "React"]}
                     filename="ghusers.webp"
                     url="https://judah1604.github.io/Github-user-search/"
+                    repoName={"Github Users Search"}
                 />
                 <Project
                     heading="Insure Landing Page"
                     details="This is a Frontend Mentor challenge. Built this landing page with:"
                     tools={["HTML", "SASS", "JavaScript"]}
                     filename="insure.webp"
+                    repoName={"Insure Landing Page"}
                 />
                 <Project
                     heading="Blogr Landing Page"
                     details="This is a Frontend Mentor challenge. Built this landing page with:"
                     tools={["HTML", "SASS", "JavaScript"]}
                     filename="blogr.webp"
+                    repoName={"Blogr Landing Page"}
                 />
                 <Project
                     heading="Calculator"
                     details="I made this fully responsive calculator"
                     tools={["HTML", "SASS", "JavaScript"]}
                     filename="calculator.webp"
+                    repoName={"Calculator"}
                 />
                 <Project
                     heading="Real Estate Site"
@@ -64,18 +71,21 @@ const Projects = () => {
 						Worked with SVG waves when building this."
                     tools={["HTML", "SASS", "JavaScript"]}
                     filename="livan.webp"
+                    repoName={"Livan"}
                 />
                 <Project
                     heading="Virtual Keyboard"
                     details="This responsive virtual keyboard' s functionality was made by implementing DOM Manipulation."
                     tools={["HTML", "CSS", "JavaScript"]}
                     filename="keyboard.webp"
+                    repoName={"Virtual Keyboard"}
                 />
                 <Project
                     heading="Google Clone"
                     details="I made this clone of Google and added a Dark mode switch."
                     tools={["HTML", "CSS", "JavaScript"]}
                     filename="google.webp"
+                    repoName={"Google Clone"}
                 />
                 <Project
                     heading="GAZU"
@@ -83,6 +93,7 @@ const Projects = () => {
 						Where I implemented CSS animations"
                     tools={["HTML", "SASS", "JavaScript", "Bootstrap"]}
                     filename="gazu.webp"
+                    repoName={"GAZU"}
                 />
                 <Project
                     heading="Selit"
@@ -90,6 +101,7 @@ const Projects = () => {
 						I call the site Selit"
                     tools={["HTML", "SASS", "JavaScript", "Bootstrap"]}
                     filename="selit.webp"
+                    repoName={"Selit"}
                 />
             </div>
         </div>
