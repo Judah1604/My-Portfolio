@@ -17,7 +17,7 @@ const About = () => {
                     Recent high school graduate with a background in web design
                     and development of dynamic, responsive and interactive
                     websites utilizing HTML, CSS, Javascript and their
-                    frameworks. Over 1 year of experience working on personal
+                    frameworks. Over 2 years of experience working on personal
                     projects. Implemented responsive web design approach to
                     build mobile first websites. Seeking to improve my web
                     development skills by deploying my experience and skills in
