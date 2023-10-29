@@ -72,6 +72,7 @@ const Projects = () => {
                     tools={["HTML", "SASS", "JavaScript"]}
                     filename="livan.webp"
                     repoName={"Livan-Real-Estate"}
+                    url={"https://judah1604.github.io/Livan-Real-Estate"}
                 />
                 <Project
                     heading="Virtual Keyboard"
