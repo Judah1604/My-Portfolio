@@ -71,7 +71,7 @@ const Projects = () => {
 						Worked with SVG waves when building this."
                     tools={["HTML", "SASS", "JavaScript"]}
                     filename="livan.webp"
-                    repoName={"Livan"}
+                    repoName={"Livan-Real-Estate"}
                 />
                 <Project
                     heading="Virtual Keyboard"
