@@ -25,7 +25,7 @@ const About = () => {
                     <br />
                     <a
                         className="btn red-btn"
-                        href="./Judah-Oyedele.pdf"
+                        href="../../Judah-Oyedele.pdf"
                         download="Judah Oyedele's Resume"
                     >
                         <i class="fa-solid fa-download"></i> Download Resume
