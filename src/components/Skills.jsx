@@ -3,12 +3,15 @@ import { motion } from "framer-motion"
 const Skills = () => {
 
     let iconNames = [
-        'html5',
-        'css3',
+        'html',
+        'css',
         'js',
         'bootstrap',
         'sass',
-        'react'
+        'react',
+        'redux',
+        'git',
+        'next'
     ]
 
     return (
@@ -17,7 +20,7 @@ const Skills = () => {
             <motion.div className="languages" initial={{ translateY: 70 }} viewport={{once: true}}
                 whileInView={{ translateY: 0 }}>
                 {iconNames.map((iconName) => (
-                    <i className={"fa-brands fa-" + iconName} key={iconName}></i>
+                    <img src={"/Images/Icons/" + iconName + ".svg"} alt={iconName} />
                 ))}
             </motion.div>
         </div>

@@ -4,7 +4,7 @@ $gradient: linear-gradient(45deg, #ff294e, #ff4b2b);
 
 .about {
 	background-color: $section-color;
-	
+
 	.header {
 		margin: 0;
 	}
@@ -59,24 +59,24 @@ $gradient: linear-gradient(45deg, #ff294e, #ff4b2b);
 
 .skills {
 	overflow: hidden;
-	
+
 	.languages {
 		width: 60%;
 		display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-        grid-gap: 20px;
+		grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+		grid-gap: 20px;
 		place-items: center;
 		padding: 10px;
 		margin: auto;
 		margin-bottom: 2em;
 		overflow: hidden;
 
-		i {
-			color: #525252;
-			font-size: 1.7em;
+		img {
+			width: 30px;
+			height: 30px;
 			transition: 0.3s;
 			cursor: pointer;
-			
+
 
 			&:hover {
 				color: #9d9d9d;
@@ -155,7 +155,7 @@ $gradient: linear-gradient(45deg, #ff294e, #ff4b2b);
 				border-bottom: 3px solid $red-color;
 				color: inherit;
 
-				&:focus ~ label {
+				&:focus~label {
 					font-size: 0.7em;
 					color: $red-color;
 					top: 0px;
