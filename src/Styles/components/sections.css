@@ -68,7 +68,7 @@
   cursor: pointer;
 }
 .skills .languages img:hover {
-  color: #9d9d9d;
+  filter: brightness(1.5);
   transform: scale(1.2);
 }
 
