@@ -37,7 +37,7 @@
 					}
 				}
 
-				&:hover > .hover-effect {
+				&:hover>.hover-effect {
 					transform: scaleX(1);
 				}
 
@@ -56,20 +56,30 @@
 		width: 100%;
 		padding: 10px 30px;
 		font-family: $hero-font-family;
+		text-align: center;
 
 		.text {
 			h1 {
-				font-size: 3em;
+				font-size: 4em;
+				text-transform: uppercase;
 			}
 
-            p {
-                font-size: 1.2em;
-                margin-top: 20px;
-            }
-			
+			p {
+				font-size: 1.2em;
+				margin-top: 20px;
+			}
+
 			.red {
 				overflow: hidden;
 				color: $red-color;
+			}
+		}
+
+		.btn {
+			display: inline-flex;
+
+			&:hover {
+				box-shadow: inset 170px 0px 0px $red-color;
 			}
 		}
 	}

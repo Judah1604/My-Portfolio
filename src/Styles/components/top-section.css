@@ -48,9 +48,11 @@
   width: 100%;
   padding: 10px 30px;
   font-family: "Space Grotesk", sans-serif;
+  text-align: center;
 }
 .top-section .hero-section .text h1 {
-  font-size: 3em;
+  font-size: 4em;
+  text-transform: uppercase;
 }
 .top-section .hero-section .text p {
   font-size: 1.2em;
@@ -59,4 +61,10 @@
 .top-section .hero-section .text .red {
   overflow: hidden;
   color: #FF4747;
+}
+.top-section .hero-section .btn {
+  display: inline-flex;
+}
+.top-section .hero-section .btn:hover {
+  box-shadow: inset 170px 0px 0px #FF4747;
 }/*# sourceMappingURL=top-section.css.map */

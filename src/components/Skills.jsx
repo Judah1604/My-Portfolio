@@ -1,30 +1,41 @@
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
+const iconVariants = {
+    initial: { translateY: 40, opacity: 0 },
+    animate: (index) => ({ translateY: 0, opacity: 1, transition: { delay: 0.05 * index } }),
+};
 const Skills = () => {
-
     let iconNames = [
-        'html',
-        'css',
-        'js',
-        'bootstrap',
-        'sass',
-        'react',
-        'redux',
-        'git',
-        'next'
-    ]
+        "html",
+        "css",
+        "js",
+        "bootstrap",
+        "sass",
+        "react",
+        "redux",
+        "git",
+        "next",
+    ];
 
     return (
         <div className="skills">
             <h1 className="header">Skills</h1>
-            <motion.div className="languages" initial={{ translateY: 70 }} viewport={{once: true}}
-                whileInView={{ translateY: 0 }}>
-                {iconNames.map((iconName) => (
-                    <img src={"/Images/Icons/" + iconName + ".svg"} alt={iconName} />
+            <div className="languages">
+                {iconNames.map((iconName, index) => (
+                    <motion.img
+                        src={"/Images/Icons/" + iconName + ".svg"}
+                        alt={iconName}
+                        variants={iconVariants}
+                        initial="initial"
+                        whileInView="animate"
+                        viewport={{ once: true }}
+                        custom={index}
+                        key={index}
+                    />
                 ))}
-            </motion.div>
+            </div>
         </div>
-    )
-}
+    );
+};
 
-export default Skills
+export default Skills;
