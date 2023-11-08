@@ -50,13 +50,21 @@
   font-family: "Space Grotesk", sans-serif;
   text-align: center;
 }
+.top-section .hero-section .text {
+  overflow: hidden;
+}
 .top-section .hero-section .text h1 {
   font-size: 4em;
   text-transform: uppercase;
+  margin: 0;
+}
+.top-section .hero-section .text h1 span {
+  display: inline-block;
+  overflow: hidden;
 }
 .top-section .hero-section .text p {
   font-size: 1.2em;
-  margin-top: 20px;
+  margin: 0;
 }
 .top-section .hero-section .text .red {
   overflow: hidden;
@@ -64,6 +72,7 @@
 }
 .top-section .hero-section .btn {
   display: inline-flex;
+  margin-top: 20px;
 }
 .top-section .hero-section .btn:hover {
   box-shadow: inset 170px 0px 0px #FF4747;

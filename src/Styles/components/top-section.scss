@@ -59,14 +59,22 @@
 		text-align: center;
 
 		.text {
+			overflow: hidden;
+
 			h1 {
 				font-size: 4em;
 				text-transform: uppercase;
+				margin: 0;
+
+				span {
+					display: inline-block;
+					overflow: hidden;
+				}
 			}
 
 			p {
 				font-size: 1.2em;
-				margin-top: 20px;
+				margin: 0;
 			}
 
 			.red {
@@ -77,6 +85,7 @@
 
 		.btn {
 			display: inline-flex;
+			margin-top: 20px;
 
 			&:hover {
 				box-shadow: inset 170px 0px 0px $red-color;

@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
 const iconVariants = {
-    initial: { translateY: 40, opacity: 0 },
-    animate: (index) => ({ translateY: 0, opacity: 1, transition: { delay: 0.05 * index } }),
+    initial: { y: 40, opacity: 0 },
+    animate: (index) => ({ y: 0, opacity: 1, transition: { delay: 0.05 * index } }),
 };
 const Skills = () => {
     let iconNames = [
