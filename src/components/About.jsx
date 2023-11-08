@@ -13,7 +13,12 @@ const About = () => {
                     ></motion.div>
                     <img src="Images/profile-pic.png" alt="Profile Picture" />
                 </div>
-                <div className="about-text col-md-6">
+                <motion.div
+                    className="about-text col-md-6"
+                    initial={{ x: 70 }}
+                    whileInView={{ x: 0 }}
+                    viewport={{ once: true }}
+                >
                     Recent high school graduate with a background in web design
                     and development of dynamic, responsive and interactive
                     websites utilizing HTML, CSS, Javascript and their
@@ -30,7 +35,7 @@ const About = () => {
                     >
                         <i class="fa-solid fa-download"></i> Download Resume
                     </a>
-                </div>
+                </motion.div>
             </div>
         </div>
     );

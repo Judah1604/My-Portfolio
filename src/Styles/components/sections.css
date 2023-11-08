@@ -40,8 +40,6 @@
 }
 .about .about-text .btn {
   margin-top: 20px;
-  margin-left: 10px;
-  width: 250px;
 }
 .about .about-text .btn:hover {
   box-shadow: inset 250px 0px 0px #FF4747;
