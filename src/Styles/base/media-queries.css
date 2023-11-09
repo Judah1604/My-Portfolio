@@ -31,6 +31,10 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .top-section .hero-section h1 {
+    flex-direction: column;
+    gap: 0 !important;
+  }
   .top-section .bg {
     -o-object-fit: cover;
        object-fit: cover;

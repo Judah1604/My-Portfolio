@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 
 const variants = {
-    initial: { y: 30,},
+    initial: { y: 30, opacity: 0 },
     animate: (delay) => ({
         y: 0,
+        opacity: 1,
         transition: { delay: delay },
     }),
 };
@@ -24,7 +25,7 @@ const HeroSection = () => {
                         viewport={{ once: true }}
                     >
                         {firstName}
-                    </motion.span>{" "}
+                    </motion.span>
                     <motion.span
                         variants={variants}
                         initial="initial"

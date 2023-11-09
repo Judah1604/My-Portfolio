@@ -59,6 +59,9 @@
   font-size: 4em;
   text-transform: uppercase;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 .top-section .hero-section .text h1 span {
   display: inline-block;
