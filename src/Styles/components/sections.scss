@@ -209,11 +209,12 @@ $gradient: linear-gradient(45deg, #ff294e, #ff4b2b);
 	@include flex (center, center, row, 50px);
 	text-align: center;
 	margin-bottom: 1em;
+	overflow: hidden;
 
 	a {
 		color: #e9e9e9;
 		font-size: 1.7em;
-		transition: 0.3s;
+		transition: opacity 0.3s;
 
 		&:hover {
 			opacity: 0.5;
