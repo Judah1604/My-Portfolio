@@ -9,6 +9,8 @@
   position: absolute;
   z-index: -1;
   filter: brightness(0.4);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .top-section .navbar {
   padding: 15px;

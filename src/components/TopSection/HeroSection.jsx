@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
 
 const variants = {
-    initial: { y: 30, opacity: 0 },
+    initial: { y: 30,},
     animate: (delay) => ({
         y: 0,
-        opacity: 1,
         transition: { delay: delay },
     }),
 };
@@ -63,7 +62,7 @@ const HeroSection = () => {
                     whileInView="animate"
                     custom={1.9}
                     className="btn red-btn"
-                    href="../../Judah-Oyedele.pdf"
+                    href="../../../Judah-Oyedele.pdf"
                     download="Judah Oyedele's Resume"
                     viewport={{ once: true }}
                 >

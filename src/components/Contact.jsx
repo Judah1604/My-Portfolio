@@ -1,22 +1,25 @@
-import { useState } from 'react'
-import { motion } from 'framer-motion'
+import { useState } from "react";
+import { motion, useScroll } from "framer-motion";
 
 const socialsVariants = {
     initial: {
-        y: 40
+        y: 40,
     },
     animate: (delay) => ({
         y: 0,
         transition: {
-            delay: delay
-        }
-    })
-}
+            delay: delay,
+        },
+    }),
+};
 
 const Contact = () => {
-    const [fullname, setFullname] = useState('')
-    const [email, setEmail] = useState('')
-    const [number, setNumber] = useState('')
+    const [fullname, setFullname] = useState("");
+    const [email, setEmail] = useState("");
+    const [number, setNumber] = useState("");
+
+    let { scrollYProgress } = useScroll();
+    console.log(scrollYProgress);
 
     return (
         <>
@@ -142,8 +145,17 @@ const Contact = () => {
                     <i className="fa-brands fa-github"></i>
                 </motion.a>
             </div>
+
+            <a
+                href="#top"
+                className={
+                    scrollYProgress === 0 ? "back-to-top active" : "back-to-top"
+                }
+            >
+                <i class="fa-solid fa-chevron-up"></i>
+            </a>
         </>
     );
-}
+};
 
-export default Contact
+export default Contact;

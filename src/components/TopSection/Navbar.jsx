@@ -8,7 +8,7 @@ const Navbar = () => {
     ]
 
     return (
-        <div className="navbar navbar-expand-lg">
+        <div className="navbar navbar-expand-lg" id='top'>
             <div className="navbar-nav nav">
                 {
                     navItems.map((navItem, index) => (
