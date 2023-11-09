@@ -13,7 +13,7 @@ const Projects = () => {
                     tools={["React", "SASS", "Bootstrap", "NextJs"]}
                     filename="movipix.png"
                     repoName={"movipix"}
-                    url={'movipix.netlify.app'}
+                    url='https://movipix.netlify.app'
                 />
                 <Project
                     heading="Word Count"
