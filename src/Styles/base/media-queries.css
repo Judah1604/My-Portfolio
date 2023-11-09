@@ -59,6 +59,10 @@
   .contact form .form-group {
     width: 90%;
   }
+  .back-to-top {
+    bottom: 30px;
+    right: 30px;
+  }
 }
 @media screen and (max-width: 375px) {
   .top-section .hero-section h1 .braces {

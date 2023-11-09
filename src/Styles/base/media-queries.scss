@@ -54,10 +54,10 @@
 	.top-section {
 
 		.hero-section h1 {
-			flex-direction: column; 
+			flex-direction: column;
 			gap: 0 !important;
 		}
-		
+
 		.bg {
 			object-fit: cover;
 		}
@@ -96,13 +96,18 @@
 			}
 		}
 	}
+
+	.back-to-top {
+		bottom: 30px;
+		right: 30px;
+	}
 }
 
 @media screen and (max-width: 375px) {
 	.top-section .hero-section h1 .braces {
 		font-size: 0.8em;
 	}
-	
+
 	.about {
 		.about-content {
 			.about-img::before {

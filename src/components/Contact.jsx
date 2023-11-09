@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { motion, useScroll } from "framer-motion";
 
 const socialsVariants = {
@@ -16,13 +16,19 @@ const socialsVariants = {
 const Contact = () => {
     const [fullname, setFullname] = useState("");
     const [email, setEmail] = useState("");
-    const [number, setNumber] = useState("");
-    const [scrollY, setScrollY] = useState(0);
+    const [number, setNumber] = useState("")
+    const [isActive, setIsActive] = useState(false);
 
-    let { scrollYProgress } = useScroll();
-    useEffect(() => {
-        setScrollY(scrollYProgress.current);
-    }, [scrollYProgress]);
+    const {scrollY} = useScroll()
+    const num = 4
+
+    scrollY.onChange((y) => {
+        if(y > 0) {
+            setIsActive(true)
+        } else {
+            setIsActive(false)
+        }
+    })
 
     return (
         <>
@@ -151,11 +157,7 @@ const Contact = () => {
 
             <a
                 href="#top"
-                className={
-                    scrollYProgress.current === 0
-                        ? "back-to-top"
-                        : "back-to-top active"
-                }
+                className={isActive ? "back-to-top active" : "back-to-top"}
             >
                 <i class="fa-solid fa-chevron-up"></i>
             </a>
