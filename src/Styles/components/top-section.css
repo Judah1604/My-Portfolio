@@ -103,6 +103,7 @@
 }
 .top-section .nav-menu .socials {
   margin-top: auto;
+  margin-bottom: 5em;
 }
 .top-section .active {
   transform: translateX(0) !important;
