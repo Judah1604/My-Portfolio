@@ -27,7 +27,7 @@ const Contact = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                 >
-                    Contact ME
+                    Contact Me
                 </motion.h1>
                 <motion.p
                     initial={{ opacity: 0, y: 30 }}
