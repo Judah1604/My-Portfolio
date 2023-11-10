@@ -1,17 +1,6 @@
 import { useState } from "react";
 import { motion, useScroll } from "framer-motion";
-
-const socialsVariants = {
-    initial: {
-        y: 40,
-    },
-    animate: (delay) => ({
-        y: 0,
-        transition: {
-            delay: delay,
-        },
-    }),
-};
+import Socials from "./Socials";
 
 const Contact = () => {
     const [fullname, setFullname] = useState("");
@@ -20,7 +9,6 @@ const Contact = () => {
     const [isActive, setIsActive] = useState(false);
 
     const {scrollY} = useScroll()
-    const num = 4
 
     scrollY.onChange((y) => {
         if(y > 0) {
@@ -33,8 +21,21 @@ const Contact = () => {
     return (
         <>
             <div className="contact" id="contact">
-                <h1 className="header">Contact</h1>
-                <p>Feel free to contact me.</p>
+                <motion.h1
+                    className="header"
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                >
+                    Contact ME
+                </motion.h1>
+                <motion.p
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                >
+                    Lets get in touch. I'd love to hear from you.
+                </motion.p>
                 <form action="#" method="POST" name="Contact Form" netlify>
                     <input
                         type="hidden"
@@ -122,38 +123,7 @@ const Contact = () => {
                 </form>
             </div>
 
-            <div className="socials">
-                <motion.a
-                    variants={socialsVariants}
-                    initial="initial"
-                    whileInView="animate"
-                    custom={0}
-                    viewport={{ once: true }}
-                    href="https://twitter.com/JudahOyedele"
-                >
-                    <i className="fa-brands fa-twitter"></i>
-                </motion.a>
-                <motion.a
-                    variants={socialsVariants}
-                    initial="initial"
-                    whileInView="animate"
-                    custom={0.2}
-                    viewport={{ once: true }}
-                    href="https://codepen.io/Judah1604"
-                >
-                    <i className="fa-brands fa-codepen"></i>
-                </motion.a>
-                <motion.a
-                    variants={socialsVariants}
-                    initial="initial"
-                    whileInView="animate"
-                    custom={0.4}
-                    viewport={{ once: true }}
-                    href="https://github.com/Judah1604"
-                >
-                    <i className="fa-brands fa-github"></i>
-                </motion.a>
-            </div>
+            <Socials />
 
             <a
                 href="#top"
