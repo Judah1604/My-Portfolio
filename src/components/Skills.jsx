@@ -12,6 +12,7 @@ const Skills = () => {
         "bootstrap",
         "sass",
         "react",
+        'framer-motion',
         "redux",
         "git",
         "next",
@@ -28,6 +29,7 @@ const Skills = () => {
                         variants={iconVariants}
                         initial="initial"
                         whileInView="animate"
+                        whileHover={{scale: 1.2}}
                         viewport={{ once: true }}
                         custom={index}
                         key={index}
