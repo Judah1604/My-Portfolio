@@ -6,6 +6,15 @@ const Projects = () => {
             <h1 className="header">Projects</h1>
             <div className="projects-container">
                 <Project
+                    heading="Movipix - Movies Site"
+                    details="This is a movie site that I like to call MoviPix, I built this site for the purpose of practicing Next Js.
+                    On this site you can add movies to favourites and view them, You can check the details of a movie by clicking on the poster image. 
+                    You can also search for movies. Built this with:"
+                    tools={["React", "SASS", "Bootstrap", "NextJs"]}
+                    filename="movipix.png"
+                    repoName={"movipix"}
+                />
+                <Project
                     heading="Word Count"
                     details="This is a word count app that counts the number of words and characters in it. Built this with:"
                     tools={["HTML", "SASS", "React"]}

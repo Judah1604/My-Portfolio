@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
 
 const Skills = () => {
+
     let iconNames = [
         'html5',
         'css3',
