@@ -63,7 +63,7 @@ const HeroSection = () => {
                     whileInView="animate"
                     custom={1.9}
                     className="btn red-btn"
-                    href="../../../Judah-Oyedele.pdf"
+                    href="/Judah-Oyedele.pdf"
                     download="Judah Oyedele's Resume"
                     viewport={{ once: true }}
                 >
