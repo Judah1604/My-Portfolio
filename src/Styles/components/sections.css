@@ -20,8 +20,8 @@
   position: absolute;
   width: 95%;
   height: 320px;
-  top: 10px;
-  left: 10px;
+  top: 7px;
+  left: 13px;
   border-radius: 50%;
   background-image: linear-gradient(45deg, #ff294e, #ff4b2b);
 }
