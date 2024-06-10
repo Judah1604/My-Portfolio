@@ -46,12 +46,6 @@
   .about .about-content .about-text {
     width: 95%;
   }
-  .about .about-content .about-img::before {
-    width: 90%;
-    height: 80%;
-    top: 15%;
-    left: 10%;
-  }
   .projects .project-img,
   .projects .project-text {
     width: 90% !important;
@@ -67,15 +61,5 @@
 @media screen and (max-width: 375px) {
   .top-section .hero-section h1 .braces {
     font-size: 0.8em;
-  }
-  .about .about-content .about-img::before {
-    height: 65%;
-    top: 20%;
-  }
-}
-@media screen and (max-width: 320px) {
-  .about .about-content .about-img::before {
-    height: 45%;
-    top: 40%;
   }
 }/*# sourceMappingURL=media-queries.css.map */
