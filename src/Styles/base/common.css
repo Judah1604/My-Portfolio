@@ -24,6 +24,10 @@ h3 {
   overflow: hidden;
 }
 
+i {
+  overflow: hidden;
+}
+
 .header {
   text-transform: uppercase;
   font-size: 2.6em;
