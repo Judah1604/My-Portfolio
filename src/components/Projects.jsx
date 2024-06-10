@@ -6,6 +6,14 @@ const Projects = () => {
 			<h1 className="header">Projects</h1>
 			<div className="projects-container">
 				<Project
+					heading="PixelPulse"
+					details="This is a site for a 3d modeling software, I was inspired by a design I found on Dribbble so I decided to try it out."
+					tools={["React", "SASS", "Bootstrap"]}
+					filename="pixelpulse.png
+					repoName={"pixelpulse"}
+					url="https://pixelpulsee.netlify.app"
+				/>
+				<Project
 					heading="Attique - Real Estate Site"
 					details="This is a real estate landing page I like to call Attique. I was inspired by a design I saw on twitter that I tried to implement. 
                     I added animations on scroll and it also looks nice on mobile."
