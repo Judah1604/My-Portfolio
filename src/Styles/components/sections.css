@@ -18,7 +18,7 @@
 .about .about-content .about-img .circle {
   z-index: 1;
   position: absolute;
-  width: 95%;
+  width: 320px;
   height: 320px;
   top: 7px;
   left: 13px;
@@ -26,7 +26,7 @@
   background-image: linear-gradient(45deg, #ff294e, #ff4b2b);
 }
 .about .about-content .about-img img {
-  width: 100%;
+  width: 320px;
   height: 320px;
   -o-object-fit: cover;
      object-fit: cover;
