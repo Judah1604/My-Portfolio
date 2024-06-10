@@ -69,13 +69,13 @@
     font-size: 0.8em;
   }
   .about .about-content .about-img::before {
-    height: 72%;
+    height: 65%;
     top: 20%;
   }
 }
 @media screen and (max-width: 320px) {
   .about .about-content .about-img::before {
-    height: 60%;
+    height: 45%;
     top: 40%;
   }
 }/*# sourceMappingURL=media-queries.css.map */
