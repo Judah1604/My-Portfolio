@@ -9,7 +9,7 @@ const Projects = () => {
 					heading="PixelPulse"
 					details="This is a site for a 3d modeling software, I was inspired by a design I found on Dribbble so I decided to try it out."
 					tools={["React", "SASS", "Bootstrap"]}
-					filename="pixelpulse.png
+					filename="pixelpulse.png*"
 					repoName={"pixelpulse"}
 					url="https://pixelpulsee.netlify.app"
 				/>
