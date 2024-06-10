@@ -7,6 +7,7 @@ const About = () => {
             <div className="about-content row">
                 <div className="about-img col-md-4">
                     <img src="Images/profile-pic.jpg" alt="Profile Picture" />
+                    <div className="circle"></div>
                 </div>
                 <motion.div
                     className="about-text col-md-6"
