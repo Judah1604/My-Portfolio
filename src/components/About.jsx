@@ -6,12 +6,7 @@ const About = () => {
             <h1 className="header">About</h1>
             <div className="about-content row">
                 <div className="about-img col-md-4">
-                    <motion.div
-                        className="circle"
-                        animate={{ scale: [0.95, 1, 0.95] }}
-                        transition={{ repeat: Infinity, duration: 3 }}
-                    ></motion.div>
-                    <img src="Images/profile-pic.png" alt="Profile Picture" />
+                    <img src="Images/profile-pic.jpg" alt="Profile Picture" />
                 </div>
                 <motion.div
                     className="about-text col-md-6"
