@@ -26,7 +26,7 @@
 }
 .about .about-content .about-img img {
   width: 100%;
-  height: 100%;
+  height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
