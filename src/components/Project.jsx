@@ -21,7 +21,7 @@ const Project = ({ heading, details, tools, filename, isPortfolio, repoName, url
             href={
               "https://github.com/Judah1604/" + repoName
             }
-            className="btn code-btn"
+            className="btn white-btn"
             target="_blank"
           >
             <i class="fa-brands fa-github"></i> View Code

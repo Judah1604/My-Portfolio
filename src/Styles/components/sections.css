@@ -11,28 +11,29 @@
   margin-bottom: 1em;
 }
 .about .about-content .about-img {
+  height: 430px;
   position: relative;
   overflow: hidden;
-  padding-bottom: 20px;
+  border-radius: 2px;
 }
 .about .about-content .about-img .circle {
   z-index: 1;
+  width: 90%;
+  height: 90%;
   position: absolute;
-  width: 320px;
-  height: 320px;
-  top: 7px;
-  left: 13px;
-  border-radius: 50%;
+  inset: 0;
+  top: 10%;
+  left: 8%;
+  border-radius: 100%;
   background-image: linear-gradient(45deg, #ff294e, #ff4b2b);
 }
 .about .about-content .about-img img {
-  width: 320px;
-  height: 320px;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  position: relative;
+  position: absolute;
   z-index: 2;
-  border-radius: 50%;
 }
 .about .about-text {
   margin-left: 1em;
@@ -76,10 +77,14 @@
 }
 .projects .projects-container {
   margin-top: 2em;
+  flex-direction: column;
+  align-items: center;
+  gap: 55px;
+  overflow: hidden;
+  padding-bottom: 1em;
 }
 .projects .projects-container .project {
   justify-content: center;
-  margin-bottom: 3em;
 }
 .projects .projects-container .project .tools {
   padding: 0;
@@ -180,32 +185,6 @@
   margin-bottom: 1.5em;
 }
 
-.back-to-top {
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  color: white;
-  font-size: 1.2em;
-  background-color: #202020;
-  display: flex;
-  padding: 20px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0px 15px 10px 10px rgba(0, 0, 0, 0.3);
-  transition: 0.2s;
-  text-decoration: none;
-  transform: scale(0);
-  z-index: 10;
-}
-.back-to-top:hover {
-  filter: brightness(1.3);
-  color: white;
-}
-
-.back-to-top.active {
-  transform: scale(1);
-}
-
 .socials {
   display: flex;
   justify-content: center;
@@ -223,44 +202,4 @@
 }
 .socials a:hover {
   opacity: 0.5;
-}
-
-.red-btn {
-  border: 2px solid #FF4747;
-  color: #FF4747;
-  box-shadow: inset 0px 0px 0px #FF4747;
-}
-.red-btn:hover {
-  box-shadow: inset 150px 0px 0px #FF4747;
-  border-color: #FF4747;
-}
-
-.btn {
-  border-radius: 5px;
-  padding: 10px 20px;
-  background-color: inherit;
-  letter-spacing: 1px;
-  transition: box-shadow 0.4s ease, border 0.4s ease;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-.btn:hover {
-  color: white;
-  background-color: inherit;
-}
-.btn i {
-  margin-right: 10px;
-}
-
-.code-btn {
-  border: 2px solid white;
-  color: white;
-  box-shadow: inset 0px 0px 0px white;
-  margin-right: 20px;
-}
-.code-btn:hover {
-  box-shadow: inset 160px 0px 0px white;
-  border-color: white;
-  color: #0c0c0c;
 }/*# sourceMappingURL=sections.css.map */

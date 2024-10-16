@@ -1,10 +1,14 @@
+import { useState } from "react";
 import Project from "./Project";
 
 const Projects = () => {
+
+    const [isHidden, setIsHidden] = useState(true)
+
 	return (
 		<div className="projects" id="projects">
 			<h1 className="header">Projects</h1>
-			<div className="projects-container">
+			<div className="projects-container d-flex">
 				<Project
 					heading="PixelPulse"
 					details="This is a site for a 3d modeling software, I was inspired by a design I found on Dribbble so I decided to try it out."
@@ -62,75 +66,88 @@ const Projects = () => {
 					isPortfolio
 					repoName={"My Portfolio"}
 				/>
-				<Project
-					heading="Github Users Search"
-					details="This is my first project done with React. It fetches the data of a github user,
+				<div className={isHidden ? "hidden" : 'hidden active'}>
+					<Project
+						heading="Github Users Search"
+						details="This is my first project done with React. It fetches the data of a github user,
                         all you need to do is to write the username in the input box. Built this with:"
-					tools={["HTML", "CSS", "React"]}
-					filename="ghusers.webp"
-					url="https://judah1604.github.io/Github-user-search/"
-					repoName={"Github Users Search"}
-				/>
-				<Project
-					heading="Insure Landing Page"
-					details="This is a Frontend Mentor challenge. Built this landing page with:"
-					tools={["HTML", "SASS", "JavaScript"]}
-					filename="insure.webp"
-					repoName={"Insure Landing Page"}
-				/>
-				<Project
-					heading="Blogr Landing Page"
-					details="This is a Frontend Mentor challenge. Built this landing page with:"
-					tools={["HTML", "SASS", "JavaScript"]}
-					filename="blogr.webp"
-					repoName={"Blogr Landing Page"}
-				/>
-				<Project
-					heading="Calculator"
-					details="I made this fully responsive calculator"
-					tools={["HTML", "SASS", "JavaScript"]}
-					filename="calculator.webp"
-					repoName={"Calculator"}
-				/>
-				<Project
-					heading="Real Estate Site"
-					details="This is a real estate site which I call LIVAN.
+						tools={["HTML", "CSS", "React"]}
+						filename="ghusers.webp"
+						url="https://judah1604.github.io/Github-user-search/"
+						repoName={"Github Users Search"}
+					/>
+					<Project
+						heading="Insure Landing Page"
+						details="This is a Frontend Mentor challenge. Built this landing page with:"
+						tools={["HTML", "SASS", "JavaScript"]}
+						filename="insure.webp"
+						repoName={"Insure Landing Page"}
+					/>
+					<Project
+						heading="Blogr Landing Page"
+						details="This is a Frontend Mentor challenge. Built this landing page with:"
+						tools={["HTML", "SASS", "JavaScript"]}
+						filename="blogr.webp"
+						repoName={"Blogr Landing Page"}
+					/>
+					<Project
+						heading="Calculator"
+						details="I made this fully responsive calculator"
+						tools={["HTML", "SASS", "JavaScript"]}
+						filename="calculator.webp"
+						repoName={"Calculator"}
+					/>
+					<Project
+						heading="Real Estate Site"
+						details="This is a real estate site which I call LIVAN.
 						Worked with SVG waves when building this."
-					tools={["HTML", "SASS", "JavaScript"]}
-					filename="livan.webp"
-					repoName={"Livan-Real-Estate"}
-					url={"https://judah1604.github.io/LIVAN-Real-Estate"}
-				/>
-				<Project
-					heading="Virtual Keyboard"
-					details="This responsive virtual keyboard' s functionality was made by implementing DOM Manipulation."
-					tools={["HTML", "CSS", "JavaScript"]}
-					filename="keyboard.webp"
-					repoName={"Virtual Keyboard"}
-				/>
-				<Project
-					heading="Google Clone"
-					details="I made this clone of Google and added a Dark mode switch."
-					tools={["HTML", "CSS", "JavaScript"]}
-					filename="google.webp"
-					repoName={"Google Clone"}
-				/>
-				<Project
-					heading="GAZU"
-					details="I made this Resturant Site which I call GAZU.
+						tools={["HTML", "SASS", "JavaScript"]}
+						filename="livan.webp"
+						repoName={"Livan-Real-Estate"}
+						url={"https://judah1604.github.io/LIVAN-Real-Estate"}
+					/>
+					<Project
+						heading="Virtual Keyboard"
+						details="This responsive virtual keyboard' s functionality was made by implementing DOM Manipulation."
+						tools={["HTML", "CSS", "JavaScript"]}
+						filename="keyboard.webp"
+						repoName={"Virtual Keyboard"}
+					/>
+					<Project
+						heading="Google Clone"
+						details="I made this clone of Google and added a Dark mode switch."
+						tools={["HTML", "CSS", "JavaScript"]}
+						filename="google.webp"
+						repoName={"Google Clone"}
+					/>
+					<Project
+						heading="GAZU"
+						details="I made this Resturant Site which I call GAZU.
 						Where I implemented CSS animations"
-					tools={["HTML", "SASS", "JavaScript", "Bootstrap"]}
-					filename="gazu.webp"
-					repoName={"GAZU"}
-				/>
-				<Project
-					heading="Selit"
-					details="I made this E-Commerce Site added Add To Cart functionality.
+						tools={["HTML", "SASS", "JavaScript", "Bootstrap"]}
+						filename="gazu.webp"
+						repoName={"GAZU"}
+					/>
+					<Project
+						heading="Selit"
+						details="I made this E-Commerce Site added Add To Cart functionality.
 						I call the site Selit"
-					tools={["HTML", "SASS", "JavaScript", "Bootstrap"]}
-					filename="selit.webp"
-					repoName={"Selit"}
-				/>
+						tools={["HTML", "SASS", "JavaScript", "Bootstrap"]}
+						filename="selit.webp"
+						repoName={"Selit"}
+					/>
+				</div>
+				<button
+					className={
+						isHidden
+							? "btn white-btn load-projects"
+							: "btn white-btn load-projects rotate"
+					}
+					onClick={() => setIsHidden(!isHidden)}
+				>
+					<i class="fa-solid fa-chevron-down"></i>
+					Load More Projects
+				</button>
 			</div>
 		</div>
 	);
