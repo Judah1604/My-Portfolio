@@ -45,6 +45,10 @@
   .about .about-content .about-text {
     width: 95%;
   }
+  .about .about-content .about-img {
+    width: 95%;
+    height: 380px;
+  }
   .projects .project-img,
   .projects .project-text {
     width: 90% !important;
