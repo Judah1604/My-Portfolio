@@ -35,17 +35,7 @@
   color: #FF4747;
 }
 .top-section .navbar .nav .nav-item .nav-link:hover {
-  color: white;
-}
-.top-section .navbar .nav .nav-item:hover > .hover-effect {
-  transform: scaleX(1);
-}
-.top-section .navbar .nav .nav-item .hover-effect {
-  width: 100%;
-  height: 4px;
-  background-color: #FF4747;
-  transition: 0.3s;
-  transform: scaleX(0);
+  color: #FF4747;
 }
 .top-section .navbar .menu {
   display: flex;

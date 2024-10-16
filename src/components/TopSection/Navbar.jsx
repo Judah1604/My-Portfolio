@@ -33,7 +33,6 @@ const Navbar = () => {
                             >
                                 {navItem.title}
                             </a>
-                            <div className="hover-effect"></div>
                         </div>
                     ))}
                 </div>
@@ -56,7 +55,6 @@ const Navbar = () => {
                             >
                                 {navItem.title}
                             </a>
-                            <div className="hover-effect"></div>
                         </div>
                     ))}
                 </div>

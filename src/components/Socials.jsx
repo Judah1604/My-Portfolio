@@ -49,7 +49,7 @@ function Socials() {
                 variants={socialsVariants}
                 initial="initial"
                 whileInView="animate"
-                custom={0.4}
+                custom={0.6}
                 viewport={{ once: true }}
                 href="https://linkedin/in/judah-oyedele"
             >
