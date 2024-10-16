@@ -77,8 +77,6 @@
     text-decoration: none;
     transform: scale(0);
     z-index: 10;
-    opacity: 0.9;
-    backdrop-filter: blur(20px);
 
     &:hover {
         filter: brightness(1.3);

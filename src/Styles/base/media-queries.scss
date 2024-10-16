@@ -24,7 +24,6 @@
 			margin-bottom: 2em;
 
 			.about-img {
-				width: 450px;
 				margin-bottom: 1.5em;
 			}
 
@@ -71,13 +70,6 @@
 			.about-text {
 				width: 95%;
 			}
-
-			.about-img::before {
-				width: 90%;
-				height: 80%;
-				top: 15%;
-				left: 10%;
-			}
 		}
 	}
 
@@ -106,25 +98,5 @@
 @media screen and (max-width: 375px) {
 	.top-section .hero-section h1 .braces {
 		font-size: 0.8em;
-	}
-
-	.about {
-		.about-content {
-			.about-img::before {
-				height: 72%;
-				top: 20%;
-			}
-		}
-	}
-}
-
-@media screen and (max-width: 320px) {
-	.about {
-		.about-content {
-			.about-img::before {
-				height: 60%;
-				top: 40%;
-			}
-		}
 	}
 }
