@@ -146,7 +146,7 @@ const Projects = () => {
 					onClick={() => setIsHidden(!isHidden)}
 				>
 					<i class="fa-solid fa-chevron-down"></i>
-					Load More Projects
+					{isHidden ? 'Load More Projects' : 'Load Less Projects'}
 				</button>
 			</div>
 		</div>
