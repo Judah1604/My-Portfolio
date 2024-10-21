@@ -16,6 +16,7 @@ const Skills = () => {
         "redux",
         "git",
         "next",
+        "figma",
     ];
 
     return (
